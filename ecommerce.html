@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Bootstrap Store</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+ <script src="https://kit.fontawesome.com/d85f716b74.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- ==============================TOP PART OF PAGE======================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+    <a class="navbar-brand" href="">Bootstrap Store</a>
+
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
+            Categories</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="category.html">Apparel & Accessories</a>
+            <a class="dropdown-item" href="category.html">Baby Products</a>
+            <a class="dropdown-item" href="category.html">Beauty &amp; Health</a>
+            <a class="dropdown-item" href="category.html">Electronics</a>
+            <a class="dropdown-item" href="category.html">Furniture</a>
+            <a class="dropdown-item" href="category.html">Home &amp; Garden</a>
+            <a class="dropdown-item" href="category.html">Luggage &amp; Bags</a>
+            <a class="dropdown-item" href="category.html">Shoes</a>
+            <a class="dropdown-item" href="category.html">Sports &amp; Entertainment</a>
+            <a class="dropdown-item" href="category.html">Watches</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="ecommerce.html">All Categories</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Link</a>
+        </li>
+
+      </ul>
+
+      <ul class="nav navbar-nav ms-auto">
+        <li>
+          <a href="#">
+            <i class="fas fa-shopping-basket fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="account.html">
+            <i class="fas fa-user fa-2x"></i>
+            </a>
+          </li>
+        <li>
+       <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#myModal">Sign in</button></li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+  <!-- The Modal -->
+  <div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Sign in</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="/action_page.php">
+              <div class="mb-3">
+                <label for="email" class="form-label">Sing in with your Email address:</label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+              </div>
+              <div class="mb-3 form-check">
+                <label class="form-check-label form-label">
+                  <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ===========================PAGE INFO============================= -->
+<div>
+<!-- =======================Carusel============================= -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1140x350.png" alt="sl1" width=100% height="350">
+    </div>
+    <div class="carousel-item">
+      <img src="1140x350.png" alt="sl2" width=100% height="350">
+    </div>
+    <div class="carousel-item">
+      <img src="1140x350.png" alt="sl3" width=100% height="350">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
+    <!-- ==================================Carusel end===================== -->
+    <hr />
+    <div class="row container m-auto">
+      <div class="col-sm-4 col-md-3">
+        <h3>Categories</h3>
+        <div class="list-group">
+          <a href="category.html" class="list-group-item">Apparel & Accessories</a>
+          <a href="category.html" class="list-group-item">Baby Products</a>
+          <a href="category.html" class="list-group-item">Beauty & Health</a>
+          <a href="category.html" class="list-group-item">Electronics</a>
+          <a href="category.html" class="list-group-item">Furniture</ a>
+            <a href="category.html" class="list-group-item">Home & Garden</a>
+            <a href="category.html" class="list-group-item">Luggage & Bags</a>
+            <a href="category.html" class="list-group-item">Shoes</a>
+            <a href="category.html" class="list-group-item">Sports & Entertainment</a>
+            <a href="category.html" class="list-group-item">Watches</a>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-md-9">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-body">
+            <img src="750x600.png" alt="">
+            <div class="add-to-cart">
+              <a href="#" class="glyphicon glyphicon-plus-sign" title="Add to cart" data-bs-toggle="tooltip" data-bs-placement="top"></a>
+            </div>
+            <div class="caption">
+              <h4 class="float-end">$24.99</h4>
+              <h4><a href="product.html">1<sup>st</sup> Product</a>
+              </h4>
+              <p>This is a short description. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+              <div class="ratings">
+                <p class="float-end"><a href="product.
+    html#comments">15 reviews</a></p>
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-body">
+            <img src="750x600.png" alt="">
+            <div class="add-to-cart">
+              <a href="#" class="glyphicon glyphicon-plus-sign" title="Add to cart" data-bs-toggle="tooltip" data-bs-placement="top"></a>
+            </div>
+            <div class="caption">
+              <h4 class="float-end">$24.99</h4>
+              <h4><a href="product.html">1<sup>st</sup> Product</a>
+              </h4>
+              <p>This is a short description. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+              <div class="ratings">
+                <p class="float-end"><a href="product.
+     html#comments">15 reviews</a></p>
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-body">
+            <img src="750x600.png" alt="">
+            <div class="add-to-cart">
+              <a href="#" class="glyphicon glyphicon-plus-sign" title="Add to cart" data-bs-toggle="tooltip" data-bs-placement="top"></a>
+            </div>
+            <div class="caption">
+              <h4 class="float-end">$24.99</h4>
+              <h4><a href="product.html">1<sup>st</sup> Product</a>
+              </h4>
+              <p>This is a short description. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+              <div class="ratings">
+                <p class="float-end"><a href="product.
+      html#comments">15 reviews</a></p>
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-body">
+            <img src="750x600.png" alt="">
+            <div class="add-to-cart">
+              <a href="#" class="glyphicon glyphicon-plus-sign" title="Add to cart" data-bs-toggle="tooltip" data-bs-placement="top"></a>
+            </div>
+            <div class="caption">
+              <h4 class="float-end">$24.99</h4>
+              <h4><a href="product.html">1<sup>st</sup> Product</a>
+              </h4>
+              <p>This is a short description. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+              <div class="ratings">
+                <p class="float-end"><a href="product.
+       html#comments">15 reviews</a></p>
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-body">
+            <img src="750x600.png" alt="">
+            <div class="add-to-cart">
+              <a href="#" class="glyphicon glyphicon-plus-sign" title="Add to cart" data-bs-toggle="tooltip" data-bs-placement="top"></a>
+            </div>
+            <div class="caption">
+              <h4 class="float-end">$24.99</h4>
+              <h4><a href="product.html">1<sup>st</sup> Product</a>
+              </h4>
+              <p>This is a short description. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+              <div class="ratings">
+                <p class="float-end"><a href="product.
+        html#comments">15 reviews</a></p>
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-body">
+            <img src="750x600.png" alt="">
+            <div class="add-to-cart">
+              <a href="#" class="glyphicon glyphicon-plus-sign" title="Add to cart" data-bs-toggle="tooltip" data-bs-placement="top"></a>
+            </div>
+            <div class="caption">
+              <h4 class="float-end">$24.99</h4>
+              <h4><a href="product.html">1<sup>st</sup> Product</a>
+              </h4>
+              <p>This is a short description. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.</p>
+              <div class="ratings">
+                <p class="float-end"><a href="product.
+         html#comments">15 reviews</a></p>
+                <p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+      </div>
+          <!-- 9item -->
+
+
+        </div>
+      </div>
+
+    </div> <!-- end of the category-->
+
+  </div>
+
+
+
+
+  <!-- ================================================ -->
+  <div class="container text-center">
+    <hr />
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; <a href="ecommerce.html">Packt Publishing</a> 2021</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
